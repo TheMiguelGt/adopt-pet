@@ -19,11 +19,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">  
+        {% comment %} icons {% endcomment %}
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         {% comment %} BOX ICONS {% endcomment %}
 
 
     </head>
     <body>
         {% block content %}{% endblock content %}
+        <script src="{% static 'core/js/main.js' %}"></script>
     </body>
 </html>
