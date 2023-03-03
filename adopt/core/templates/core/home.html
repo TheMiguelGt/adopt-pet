@@ -13,10 +13,12 @@
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link active-link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">What is this?</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Why adopt?</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Accessory</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#share" class="nav__link">What is this?</a></li>
+                <li class="nav__item"><a href="#decoration" class="nav__link">Why adopt?</a></li>
+                <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
+
+                <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
             </ul>
         </div>
 
@@ -31,22 +33,132 @@
     <section class="home" id="home">
         <div class="home__container bd-container bd-grid">
             <div class="home__img">
-                <img src="" alt="">
+                <img src="{% static 'core/img/test.jpg' %}" alt="">
             </div>
 
             <div class="home__data">
-                <h1 class="home__title">It's Your Moment To Adopt</h1>
+                <h1 class="home__title">It's Your Moment <br> To Adopt</h1>
                 <p class="home__description">This is your opportunity to be happy and have a new friend to share love.</p>
                 <a href="" class="button">Get Started</a>
             </div>
         </div>
     </section>
+
+    {% comment %} SHARE {% endcomment %}
+    <section class="sharee section bd-container" id="share">
+        <div class="share__container bd-grid">
+            <div class="share__data">
+                <h2 class="section-title-center">What is this?</h2>
+                <p class="share__description">This is a web page, where you can adopt an animals. And you feel good with this decision.</p>
+                <a href="" class="button">Get Started</a>
+            </div>
+
+            <div class="share__img">
+                <img src="{% static 'core/img/test.jpg' %}" alt="">
+            </div>
+        </div>
+    </section>
 </main>
+
+{% comment %} DECORATION {% endcomment %}
+<section class="decoration section bd-container" id="decoration">
+    <h2 class="section-title">You Need Adopt</h2>
+
+    <div class="decoration__container bd-grid">
+        <div class="decoration__data">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
+            <h3 class="decoration__title">Dogs Are Beautiful</h3>
+            <a href="#" class="button button-link">Go to Adopt</a>
+        </div>
+
+        <div class="decoration__data">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
+            <h3 class="decoration__title">Cats Are Beautiful</h3>
+            <a href="#" class="button button-link">Go to Adopt</a>
+        </div>
+   
+        <div class="decoration__data">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
+            <h3 class="decoration__title">If You Love Animals</h3>
+            <a href="#" class="button button-link">Go to Adopt</a>
+        </div>
+    </div>
+</section>
+
+<section class="accessory section bd-container" id="accessory">
+    <h2 class="section-title">Your Pet Need <br> Decorations</h2>
+
+    <div class="accessory__container bd-grid">
+        <div class="accessory__content">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="accessory__img">
+            <h3 class="accessory__title">Necklace</h3>
+            <span class="accessory__category">Accessory</span>
+            <span class="accessory__preci">$10</span>
+            <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="accessory__img">
+            <h3 class="accessory__title">Necklace</h3>
+            <span class="accessory__category">Accessory</span>
+            <span class="accessory__preci">$10</span>
+            <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="accessory__img">
+            <h3 class="accessory__title">Necklace</h3>
+            <span class="accessory__category">Accessory</span>
+            <span class="accessory__preci">$10</span>
+            <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="{% static 'core/img/test.jpg' %}" alt="" class="accessory__img">
+            <h3 class="accessory__title">Necklace</h3>
+            <span class="accessory__category">Accessory</span>
+            <span class="accessory__preci">$10</span>
+            <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+    </div>
+
+</section>
+
+{% comment %} SEND GIFT {% endcomment %}
+
 
 {% comment %} FOOTER {% endcomment %}
 <footer class="footer section">
+    <div class="footer__container bd-container bd-grid">
+        <div class="footer__content">
+            <h3 class="footer__title">
+                <a href="#" class="footer__logo">Adopt Pet</a>
+            </h3>
+            <p class="footer__description">I adopt pet and it make <br> me happiness</p>
+        </div>
 
+        <div class="footer__content">
+            <h3 class="footer__title">Our Company</h3>
+
+            <ul>
+                <li><a href="#" class="footer__link">Blog</a></li>
+                <li><a href="#" class="footer__link">About us</a></li>
+                <li><a href="#" class="footer__link">Our mision</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Social</h3>
+            <a href="#" class="footer__social"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="#" class="footer__social"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+        </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2023 LeMone. All right reserved</p>
 </footer>
 
+{% comment %} SCROLL REVEAL {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
 
 {% endblock content %}
