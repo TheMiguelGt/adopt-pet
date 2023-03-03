@@ -1,0 +1,44 @@
+{% extends 'registration/base.html' %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+
+{% block content %}
+<img class="wave" src="{% static 'registration/img/wave.png' %}">
+<div class="container">
+  <div class="img">
+    <img src="{% static 'registration/img/login.svg' %}">
+  </div>
+  <div class="login-container">
+    <form action="" method="post">
+      {% csrf_token %}
+      <img class="avatar" src="{% static 'registration/img/user.png' %}" >
+      <h2>Welcome</h2>
+      <div class="input-div one">
+        <div class="i ">
+          <i class='bx bxs-user' style="font-size: 30px;"></i>
+        </div>
+        <div>
+          <h5>Username</h5>
+          <input class="input" type="text" name="username">
+        </div>
+      </div>
+
+      <div class="input-div two">
+        <div class="i">
+          <i class='bx bx-key' style="font-size: 30px;" ></i>
+        </div>
+        <div>
+          <h5>Password</h5>
+          <input class="input" type="password" name="password" >
+        </div>
+      </div>
+      <a href="">Did you forget your password?</a>
+      <div class="btn-div">
+        <input class="btn btn-primary" type="submit" name="" value="Login">
+      </div>
+      
+      
+    </form>
+  </div>
+</div>
+{% endblock content %}

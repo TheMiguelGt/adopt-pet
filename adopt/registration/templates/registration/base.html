@@ -1,4 +1,4 @@
-{% load static %} <!--Bloque para cargar archivos estaticos-->
+{% load static %} <!--Load static files-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +9,7 @@
         <title>{% block title %}{% endblock title %}</title>
         <link rel="shortcut icon" href="{% static 'core/img/favicon.png' %}">
         {% comment %} CSS {% endcomment %}
-        <link type='text/css' rel="stylesheet" href="{% static "core/css/style.css" %}"> <!--es necesario poner static para trabajar con los archivos estaticos de dicho directorio-->
+        <link type='text/css' rel="stylesheet" href="{% static "registration/css/style.css" %}"> <!--es necesario poner static para trabajar con los archivos estaticos de dicho directorio-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
@@ -26,7 +26,16 @@
 
     </head>
     <body>
+        {% comment %} HEADER {% endcomment %}
+       
+        <header class="l-header" id="header" >
+            <div class="icon-back">
+                <a href="{% url 'home' %}" class="back"><i class='bx bx-arrow-back' style="font-size: 20px;"></i></a>
+            </div>
+        </header>
+  
+
         {% block content %}{% endblock content %}
-        <script src="{% static 'core/js/main.js' %}"></script>
+        <script src="{% static 'registration/js/login.js' %}"></script>
     </body>
 </html>

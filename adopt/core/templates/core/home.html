@@ -9,7 +9,7 @@
 {% comment %} HEADER {% endcomment %}
 <header class="l-header" id="header">
     <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Adopt Pet</a>
+        <a href="{% url 'home' %}" class="nav__logo">Adopt Pet</a>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
@@ -33,13 +33,13 @@
     <section class="home" id="home">
         <div class="home__container bd-container bd-grid">
             <div class="home__img">
-                <img src="{% static 'core/img/test.jpg' %}" alt="">
+                <img src="{% static 'core/img/dog.png' %}" alt="">
             </div>
 
             <div class="home__data">
-                <h1 class="home__title">It's Your Moment <br> To Adopt</h1>
+                <h1 class="home__title">It's Your Time <br> To Adopt</h1>
                 <p class="home__description">This is your opportunity to be happy and have a new friend to share love.</p>
-                <a href="" class="button">Get Started</a>
+                <a href="{% url 'login' %}" class="button">Get Started</a>
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@
             </div>
 
             <div class="share__img">
-                <img src="{% static 'core/img/test.jpg' %}" alt="">
+                <img src="{% static 'core/img/cat.png' %}" alt="">
             </div>
         </div>
     </section>
@@ -66,21 +66,21 @@
 
     <div class="decoration__container bd-grid">
         <div class="decoration__data">
-            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
-            <h3 class="decoration__title">Dogs Are Beautiful</h3>
-            <a href="#" class="button button-link">Go to Adopt</a>
+            <img src="{% static 'core/img/angry.png' %}" alt="" class="decoration__img">
+            <h3 class="decoration__title">Cats Are Beautiful</h3>
+            <a href="#" class="button button-link">I Want to Adopt</a>
         </div>
 
         <div class="decoration__data">
-            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
-            <h3 class="decoration__title">Cats Are Beautiful</h3>
-            <a href="#" class="button button-link">Go to Adopt</a>
+            <img src="{% static 'core/img/luma.png' %}" alt="" class="decoration__img">
+            <h3 class="decoration__title">Dogs Are Beautiful</h3>
+            <a href="#" class="button button-link">I Want to Adopt</a>
         </div>
    
         <div class="decoration__data">
-            <img src="{% static 'core/img/test.jpg' %}" alt="" class="decoration__img">
+            <img src="{% static 'core/img/melvin.png' %}" alt="" class="decoration__img">
             <h3 class="decoration__title">If You Love Animals</h3>
-            <a href="#" class="button button-link">Go to Adopt</a>
+            <a href="#" class="button button-link">I Want to Adopt</a>
         </div>
     </div>
 </section>
