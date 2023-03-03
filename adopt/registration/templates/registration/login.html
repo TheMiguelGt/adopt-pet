@@ -12,7 +12,7 @@
     <form action="" method="post">
       {% csrf_token %}
       <img class="avatar" src="{% static 'registration/img/user.png' %}" >
-      <h2>Welcome</h2>
+      <h2>Login</h2>
       <div class="input-div one">
         <div class="i ">
           <i class='bx bxs-user' style="font-size: 30px;"></i>
@@ -33,6 +33,7 @@
         </div>
       </div>
       <a href="">Did you forget your password?</a>
+      <a href="{% url 'signup' %}">I don't have an account</a>
       <div class="btn-div">
         <input class="btn btn-primary" type="submit" name="" value="Login">
       </div>

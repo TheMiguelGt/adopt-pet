@@ -26,23 +26,26 @@ body{
 }
 
 .back{
-    color: black;
+    color: #fff;
     font-weight: 800;
 }
 
+.back:hover{
+    color: #fff;
+}
+
 .icon-back{
-    position: fixed;
-    background-color: #fff;
-    padding: 0px 4px 0px 4px;
-    border: 2px solid;
+    right: 1rem;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(218,37,53,.5);
     border-radius: .4rem;
-    text-align: center;
-    font-size: 1.4rem;
+    transition: .4s;
 }
 
 .icon-back:hover{
-    border: 2px solid #DA2535;
-    color: #DA2535;
+    background-color: #DA2535;
+    color: #fff;
 }
 
 .wave{
